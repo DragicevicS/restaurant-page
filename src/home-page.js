@@ -7,18 +7,19 @@ export default function homePageLoad() {
   main.textContent = '';
   const newPara = () => document.createElement('p');
   const newImg = () => document.createElement('img');
+  const newDiv = () => document.createElement('div');
 
-  const mainDiv = document.createElement('div');
-  mainDiv.classList.add('mainDiv');
-  const mainParas = document.createElement('div');
+  const homeDiv = newDiv();
+  homeDiv.classList.add('home-div');
+  const mainParas = newDiv();
   mainParas.classList.add('mainParas')
-  const mainImgs = document.createElement('div');
+  const mainImgs = newDiv();
   mainImgs.classList.add('mainImgs');
-  const mainQuote = document.createElement('div');
+  const mainQuote = newDiv();
   mainQuote.classList.add('mainQuote');
 
-  main.appendChild(mainDiv);
-  mainDiv.appendChild(mainParas);
+  main.appendChild(homeDiv);
+  homeDiv.appendChild(mainParas);
   mainParas.appendChild(newPara());
   mainParas.firstChild.textContent = "- Business hours -"
   mainParas.appendChild(newPara());
@@ -30,7 +31,7 @@ export default function homePageLoad() {
   mainParas.appendChild(newPara());
   mainParas.lastElementChild.textContent = "14:30pm - 16:00pm";
 
-  mainDiv.appendChild(mainImgs);
+  homeDiv.appendChild(mainImgs);
   mainImgs.appendChild(newImg());
   mainImgs.firstElementChild.setAttribute('src', restaurant);
   mainImgs.firstElementChild.setAttribute('alt', "Image of restaurant's interior");
@@ -41,7 +42,7 @@ export default function homePageLoad() {
   mainImgs.lastElementChild.setAttribute('src', kitchen);
   mainImgs.lastElementChild.setAttribute('alt', "Image of restaurant's kitchen");
 
-  mainDiv.appendChild(mainQuote);
+  homeDiv.appendChild(mainQuote);
   mainQuote.appendChild(newPara());
   mainQuote.firstElementChild.textContent = '“So long as you have food in your mouth you have solved all questions for the time being.”';
   mainQuote.appendChild(newPara());
