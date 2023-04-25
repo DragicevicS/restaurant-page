@@ -39,9 +39,3 @@ contactBtn.addEventListener('click', () => {
   menuBtn.style.backgroundColor = 'black';
   contactBtn.style.backgroundColor = '#282A3A';
 });
-
-
-
-
-
-

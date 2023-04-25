@@ -105,14 +105,13 @@ main {
   flex-direction: column;
   align-items: center;
   font-size: 1.8rem;
-  color: var(--first-color);
+  color: var(--forth-color);
 }
 
-.mainParas p:nth-child(2),
-.mainParas p:nth-child(3),
-.mainParas p:nth-child(5) {
-  color: var(--forth-color);
+.mainParas p:nth-child(1),
+.mainParas p:nth-child(4) {
   font-family: 'Dancing Script', cursive;
+  color: white;
 }
 
 .mainImgs {
@@ -207,4 +206,37 @@ img:hover {
 .sides>p {
   font-size: 1.2rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* main - contact */
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+  width: min(50%, calc(80% + 100px));
+  height: 100%;
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-div h2 {
+  font-size: 1.8rem;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+}
+
+.info-div p {
+  font-size: 1.8rem;
+  color: var(--forth-color);
+}
+
+#map {
+  width: 100%;
+  height: 20em;
 }

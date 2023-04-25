@@ -21,13 +21,13 @@ export default function homePageLoad() {
   main.appendChild(homeDiv);
   homeDiv.appendChild(mainParas);
   mainParas.appendChild(newPara());
-  mainParas.firstChild.textContent = "- Business hours -"
+  mainParas.firstChild.textContent = "~ Business hours ~"
   mainParas.appendChild(newPara());
   mainParas.children[1].textContent = "Monday - Saturday";
   mainParas.appendChild(newPara());
   mainParas.children[2].textContent = "08:30am - 01:00am";
   mainParas.appendChild(newPara());
-  mainParas.children[3].textContent = "- Happy hour -";
+  mainParas.children[3].textContent = "~ Happy hour ~";
   mainParas.appendChild(newPara());
   mainParas.lastElementChild.textContent = "14:30pm - 16:00pm";
 
